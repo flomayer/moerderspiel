@@ -45,7 +45,7 @@ public class Gamemaster {
         for (Player p : players
                 ) {
             if (players.indexOf(p) == players.size() - 1) {
-                p.setTarget(players.get(1));
+                p.setTarget(players.get(0));
             } else {
                 p.setTarget(players.get(players.indexOf(p) + 1));
             }
@@ -53,6 +53,9 @@ public class Gamemaster {
         Collections.shuffle(players);
     }
 
+    public String getTargetNameForPlayerIndex(int index) {
+        return players.get(index).getTarget().getName();
+    }
 
 }
 

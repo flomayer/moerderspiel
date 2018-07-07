@@ -13,4 +13,5 @@
     <string name="add_player">Spieler hinzufügen</string>
     <string name="name">Name</string>
     <string name="player_name">Name</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
