@@ -2,23 +2,55 @@ package florianmayer.com.mrderspiel;
 
 import android.app.Activity;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 public class Gamemaster {
-    public List<Player> shuffle(List<Player> playerlist) {
-        Collections.shuffle(playerlist);
-        for (Player p : playerlist
+    private static Gamemaster gamemaster;
+
+    private Gamemaster() {
+        this.players = new ArrayList<>();
+    }
+
+    public synchronized static Gamemaster getGamemaster() {
+        if (gamemaster == null) {
+            gamemaster = new Gamemaster();
+        }
+        return gamemaster;
+    }
+
+
+    private List<Player> players;
+
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+
+    public void addPlayer(Player player) {
+        this.players.add(player);
+    }
+
+    public void removePlayerAtIndex(int index) {
+        this.players.remove(index);
+    }
+
+    public void shuffle() {
+        Collections.shuffle(players);
+        for (Player p : players
                 ) {
-            if (playerlist.indexOf(p) == playerlist.size() - 1) {
-                p.setTarget(playerlist.get(1));
+            if (players.indexOf(p) == players.size() - 1) {
+                p.setTarget(players.get(1));
             } else {
-                p.setTarget(playerlist.get(playerlist.indexOf(p) + 1));
+                p.setTarget(players.get(players.indexOf(p) + 1));
             }
         }
-        Collections.shuffle(playerlist);
-        return playerlist;
+        Collections.shuffle(players);
     }
 
 

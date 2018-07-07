@@ -5,6 +5,14 @@ public class Player {
     private boolean alive;
     private Player target;
 
+    public Player() {
+    }
+
+    public Player(String name) {
+        this.name = name;
+        this.alive = true;
+    }
+
     public String getName() {
         return name;
     }
@@ -29,10 +37,15 @@ public class Player {
         this.target = target;
     }
 
-    public void killTarget(){
+    public void killTarget() {
         target.setAlive(false);
-        Player nexttarget=target.getTarget();
+        Player nexttarget = target.getTarget();
         target.setTarget(null);
-        this.target=nexttarget;
+        this.target = nexttarget;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

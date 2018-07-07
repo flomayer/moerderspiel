@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="add_player">Spieler hinzufügen</string>
+    <string name="name">Name</string>
+    <string name="player_name">Name</string>
+</resources>
