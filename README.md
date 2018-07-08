@@ -8,4 +8,14 @@ Die erste Testversion der App gibts hier zum Download:
 
 
 Die testhalber signierte App gibs hier, falls die andere nicht funktioniert:
+
 [Mörderspiel-Alpha-Signiert.apk](builds/moerderspiel-signed.apk)
+
+Wer eine iOS-Version haben will darf hier für ein Macbook spenden:
+
+https://paypal.me/pools/c/85Xxf1QchV
+
+
+Und wer will dass die App mal im Google Play Store landet kann hier für die 25$-Entwicklerlizenz spenden:
+
+https://paypal.me/pools/c/85XxCtaqgo
