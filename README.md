@@ -5,3 +5,7 @@ Diese App soll dabei helfen, Mitspieler des Gruppenspiels [Mörderspiel](http://
 Die erste Testversion der App gibts hier zum Download:
 
 [Mörderspiel-Alpha.apk](builds/moerderspiel.apk)
+
+
+Die testhalber signierte App gibs hier, falls die andere nicht funktioniert:
+[Mörderspiel-Alpha-Signiert.apk](builds/moerderspiel-signed.apk)
